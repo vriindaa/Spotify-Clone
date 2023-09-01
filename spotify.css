@@ -1,0 +1,754 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    overflow: hidden;
+}
+
+#main{
+    display: flex;
+    background-color: black;
+    height: 100vh;
+}
+
+#sidebar{
+   width: 25%;
+   background-color: black;
+   height: 39.8rem;
+   border-radius: 0.5rem;
+   margin: 0.5rem 0rem 0rem 0.7rem;
+}
+
+#mainbox{
+   width: 50%;
+   background-color: #121212;
+   height: 39.8rem;
+   margin: 0.5rem 0rem 0rem 0.5rem;
+   border-radius: 0.5rem;
+   overflow: auto;
+}
+
+#currentsongbox{
+   width: 25%;
+   background-color: #121212;
+   height: 39.8rem;
+   border-radius: 0.5rem;
+   margin: 0.5rem 0.7rem 0rem 0.5rem;
+   overflow: auto;
+   overflow-x: hidden;
+}
+
+#currentsong-display-bar{
+   position: fixed;
+   bottom: 0rem;
+   background-color: black;
+   width: 100%;
+   height: 6rem;
+   display: flex;
+   align-items: center;
+}
+
+#sidebar-div1{
+    background-color: #121212;
+    height: 7rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+    line-height: 2rem;
+}
+
+.home{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    color: white;
+    margin-bottom: 1rem;
+    width: 90%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.home span{
+    margin-left: 1rem;
+}
+
+.home i{
+    font-size: 1.3rem;
+}
+
+#search{
+    opacity: 0.5;
+}
+
+#search:hover{
+    opacity: 1;
+}
+
+#sidebar-div2{
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #121212;
+    border-radius: 0.5rem;
+}
+#sidebar-sticky-nav{
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0.5rem 1.5rem;
+}
+
+.sticky-divs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.sticky-divs button:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.176);
+}
+
+.sticky-divs div img{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+button{
+    height: 2rem;
+    width: fit-content;
+    border-radius: 1rem;
+    padding: 4px 12px;
+    background-color: #FFFFFF12;
+    border: none;
+    color: white;
+    font-weight: 600;
+}
+
+#sticky-div1{
+    opacity: 0.5;
+}
+
+#sticky-div1:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#sticky-div2 i{
+    opacity: 0.5;
+}
+
+#sticky-div2 i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#playlist-section{
+    height: 25.3rem;
+    overflow: auto;
+    padding: 0rem 0.3rem;
+}
+
+#playlist-head{
+    display: flex;
+    height: 2.1rem;
+    color: white;
+    align-items: center;
+    padding: 0.5rem 1.2rem;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+#playlist-head div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 5rem;
+    margin-left: 0.5rem;
+    opacity: 0.5;
+}
+
+#playlist-head div:nth-child(2):hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+#playlist-head div:nth-child(1){
+    opacity: 0.5;
+}
+
+#playlist-head div:nth-child(1):hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.list{
+    height: 4rem;
+    border-radius: 0.5rem;
+    display: flex;
+    color: white;
+    padding: 0.4rem;
+}
+
+.list:hover{
+    cursor: pointer;
+    background-color: #1e1d1d;
+}
+
+#playlist-icon{
+    height: 3rem;
+    width: 3rem;
+    background-color: #FFFFFF12;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#descrp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 3rem;
+    margin-left: 0.7rem;
+}
+
+#descrp h5{
+    opacity: 0.5;
+    font-weight: 500;
+}
+
+#playlist-section::-webkit-scrollbar{
+    appearance: none;
+    width: 0.7rem;
+}
+
+#playlist-section::-webkit-scrollbar-thumb{
+    background-color: grey;
+}
+
+#mainbox-sticky-nav{
+    background-color: #1a093fef;
+    height: 4rem;
+    display: flex;
+    position: sticky;
+    top: 0rem;
+    z-index: 5;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    padding: 0.5rem 1rem;
+}
+
+#nav-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-icons div{
+    height: 2rem;
+    width: 2rem;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#nav-icons div img{
+    height: 1.3rem;
+    width: 1.3rem;
+}
+
+#nav-buttons{
+    display: flex;
+    /* width: 18.25rem; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+#nav-buttons button{
+    margin-right: 0.5rem;
+}
+
+#mainbox-main-content{
+    padding: 0rem 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.7rem;
+}
+
+h1,h2,h5{
+    color: white;
+}
+
+.flexbox h5{
+    opacity: 0.5;
+}
+
+.flexbox h2:hover, h5:hover{
+    text-decoration: underline;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.flex-items{
+    width: 21rem;
+    height: 5rem;
+    margin-top: 0.7rem;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    background-color: #FFFFFF12;
+}
+
+.flex-items:hover{
+    cursor: pointer;
+    background-color: #35343492;
+}
+
+.flex-items img{
+    width: 22%;
+    height: 5rem;
+    border-radius: 0.3rem 0rem 0rem 0.3rem;
+}
+
+.flexcards{
+    width: 12rem;
+    height: 18rem;
+    /* border: 2px solid white; */
+    border-radius: 0.4rem;
+    color: white;
+    padding: 1rem;
+    background-color: rgba(26, 25, 25, 0.774);
+    margin-bottom: 1.5rem;
+}
+
+.flexcards img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+}
+
+.flexcards div{
+    margin-top: 1rem;
+}
+
+.flexcards div h4{
+    margin-bottom: 0.5rem;
+}
+
+.flexcards div span{
+    opacity: 0.5;
+    line-height: 1.5rem;
+}
+
+.flexcards:hover{
+    cursor: pointer;
+    background-color: #FFFFFF12;
+}
+#mainbox::-webkit-scrollbar{
+    appearance: none;
+    width: 0.7rem;
+}
+
+#mainbox::-webkit-scrollbar-track{
+    background-color: white
+}
+
+#mainbox::-webkit-scrollbar-thumb{
+    background-color: grey;
+}
+
+#labels{
+    margin-top: 5rem;
+    padding: 0rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#label-main-box{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.label-boxes{
+    width: 11rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.label-boxes span{
+    opacity: 0.5;
+}
+
+.label-boxes span:hover{
+    opacity: 1;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#label-icons{
+    width: 9.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#label-icons div{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF12;
+    color: white;
+    font-size: 1rem;
+}
+
+#label-icons div:hover{
+    background-color: rgba(255, 255, 255, 0.18);
+}
+
+#horizontal-line{
+    margin: 2.3rem 1rem;
+    border-top: 1px solid #FFFFFF12;
+}
+
+#footer{
+    padding: 0rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+#footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+#footer-links span{
+    margin-right: 1rem;
+    opacity: 0.5;
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+#footer-links span:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+#footer span{
+    color: white;
+    opacity: 0.5;
+    font-size: 0.9rem;
+    margin: 0.5rem;
+}
+
+#head{
+    margin-top: 0.5rem;
+    height: 3rem;
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#head div{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#head h3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#head div:hover{
+    background-color: #FFFFFF12;
+    cursor: pointer;
+}
+
+#song-poster{
+    padding: 1rem;
+    width: 100%;
+    /* border: 2px solid red; */
+}
+
+#song-poster img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+#song-title{
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+#song-name{
+    width: 80%;
+    line-height: 2rem;
+}
+
+#song-name span{
+    opacity: 0.5;
+}
+#song-name span:hover{
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#song-name h3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#currentsongbox::-webkit-scrollbar{
+    appearance: none;
+    width: 0.7rem;
+}
+
+#currentsongbox::-webkit-scrollbar-thumb{
+    background-color: grey;
+}
+
+#artist-details{
+    padding: 0rem 1rem;
+    margin-top: 1rem;
+}
+
+#artist-details > div{
+    width: 100%;
+    position: relative;
+    border-radius: 0.5rem;
+    background-color: #FFFFFF12;
+    color: white;
+}
+
+#artist-details > div:hover{
+    cursor: pointer;
+}
+
+#artist-details > div img{
+    width: 100%;
+}
+
+#artist-details > div span{
+    position: absolute;
+    font-weight: 600;
+    top: 1.5rem;
+    left: 1rem;
+}
+
+#artist-intro{
+    width: 90%;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#artist-intro div{
+    margin-bottom: 0.7rem;
+}
+
+#artist-intro div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#artist-intro div:nth-child(2) button{
+    background-color: transparent;
+    border: 2px solid #ffffff72;
+    transition: all 0.3s linear;
+}
+
+#artist-intro div:nth-child(2) button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+#next-song{
+    padding: 0rem 1rem;
+    margin-top: 2rem;
+}
+
+#next-song > div{
+    background-color: #FFFFFF12;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#next-song > div > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    color: white;
+    padding: 0.5rem 0.3rem;
+}
+
+#next-song > div > div:nth-child(2):hover{
+    background-color: rgba(255, 255, 255, 0.194);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+#next-song > div div:nth-child(2) div{
+    margin-right: 1rem;
+}
+
+#div1{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+#div1 > div{
+    margin-left: 1rem;
+}
+
+#div1 > div:hover{
+    cursor: pointer;
+}
+
+#div2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#player-icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+#player-icons div img{
+    height: 1rem;
+    width: 1rem;
+    opacity: 0.5;
+}
+
+#player-icons div img:hover{
+    opacity: 1;
+}
+
+#progress-bar-box{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.progress-bar{
+    width: 60%;
+    appearance: none;
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    background-color: rgba(72, 71, 71, 0.877);
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    height: 0.2rem;
+    border-radius: 0.5rem;
+    width: 50%;
+    background-color: #1bd760;
+}
+
+.progress-bar::-webkit-slider-thumb{
+    display: none;
+}
+
+#div3{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#volume::-webkit-slider-runnable-track{
+    background-color: #1bd760;
+}
+
+#volume::-webkit-slider-thumb{
+    display: none;
+}
+
+.thumb{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    right: 0.7rem;
+}
+
+@media(max-width: 1024px){
+    #nav-buttons button:nth-child(1){
+        display: none;
+    }
+}
+
+@media(max-width: 1262px){
+    #currentsongbox{
+        display: none;
+    }
+
+    #mainbox{
+        width: 70%;
+    }
+
+    #sidebar{
+        width: 30%;
+    }
+}

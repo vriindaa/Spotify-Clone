@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com"     crossorigin>
+    <link rel="icon" href="logo.png">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link href="https://fonts.googleapis.com/css2?    family=Montserrat:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+    <div id="main">
+        <div id="sidebar">
+            <div id="sidebar-div1">
+                <div class="home">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </div>
+                <div class="home" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>
+                </div>
+            </div>
+
+            <div id="sidebar-div2">
+                <div id="sidebar-sticky-nav">
+                    <div class="sticky-divs" style="margin-bottom: 1rem;">
+                        <div style="display: flex; align-items: center;" id="sticky-div1">
+                            <img src="library_icon.png" alt="">
+                            <span style="margin-left: 1rem; font-weight: 600;">Your Library</span>
+                        </div>
+                        <div id="sticky-div2">
+                            <i class="fa-solid fa-plus" style="margin-right: 0.5rem;"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <div class="sticky-divs" style="padding-top: 0.5rem;">
+                        <button>Playlists</button>
+                        <button>Albums</button>
+                        <button>Podcasts & Shows</button>
+                    </div>
+                </div>
+
+                <div id="playlist-section">
+                    <div id="playlist-head">
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div>
+                            <span>Recents</span>
+                            <i class="fa-solid fa-caret-down"></i>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div id="playlist-icon">
+                            <img src="liked songs.jpg" alt="" style="height: 3rem; width: 3rem; border-radius: 0.3rem;">
+                        </div>
+                        <div id="descrp">
+                            <h4>Liked Songs</h5>
+                            <h5>Playlist &bull; 151 songs</h6>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div id="playlist-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div id="descrp">
+                            <h4>My Playlist #9</h5>
+                            <h5>Playlist &bull; vrinda</h6>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div id="playlist-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div id="descrp">
+                            <h4>My Playlist #8</h5>
+                            <h5>Playlist &bull; vrinda</h6>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div id="playlist-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div id="descrp">
+                            <h4>My Playlist #7</h5>
+                            <h5>Playlist &bull; vrinda</h6>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div id="playlist-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div id="descrp">
+                            <h4>My Playlist #6</h5>
+                            <h5>Playlist &bull; vrinda</h6>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div id="playlist-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div id="descrp">
+                            <h4>My Playlist #5</h5>
+                            <h5>Playlist &bull; vrinda</h6>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div id="playlist-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div id="descrp">
+                            <h4>My Playlist #4</h5>
+                            <h5>Playlist &bull; vrinda</h6>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div id="playlist-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div id="descrp">
+                            <h4>My Playlist #3</h5>
+                            <h5>Playlist &bull; vrinda</h6>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div id="playlist-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div id="descrp">
+                            <h4>My Playlist #2</h5>
+                            <h5>Playlist &bull; vrinda</h6>
+                        </div>
+                    </div>
+                    <div class="list">
+                        <div id="playlist-icon">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+                        <div id="descrp">
+                            <h4>My Playlist #1</h5>
+                            <h5>Playlist &bull; vrinda</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="mainbox">
+            <div id="mainbox-sticky-nav">
+                <div id="nav-icons">
+                    <div>
+                        <img src="backward_icon.png" alt="">
+                    </div>
+                    <div style="margin-left: 0.5rem;">
+                        <img src="forward_icon.png" alt="">
+                    </div>
+                </div>
+
+                <div id="nav-buttons">
+                    <button style="background-color: white; color: black;">Explore Premium</button>
+                    <button style="background-color: black; color: white;">
+                        <i class="fa-regular fa-circle-down"></i>
+                         <span>Install App</span>
+                    </button>
+                    <div style="width: 2rem; height: 2rem; border-radius: 50%; background-color: black; color: white; display: flex; justify-content: center; align-items: center;">
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="mainbox-main-content" style="background: linear-gradient(#1a093fef,#1a093fef,#121212 70%); margin-bottom: 4rem;"> 
+                <h1>Good evening</h2>
+                <div class="flexbox">  
+                            <div class="flex-items">
+                                <img src="liked songs.jpg" alt="">
+                                <h4 style="margin-left: 1rem;">Liked Songs</h4>
+                            </div>
+                            <div class="flex-items">
+                                <img src="card1img.jpeg" alt="">
+                                <h4 style="margin-left: 1rem;">Top 50 - Global</h4>
+                            </div>
+                            <div class="flex-items">
+                                <img src="card6img.jpeg" alt="">
+                                <h4 style="margin-left: 1rem;">Top Songs India</h4>
+                            </div>
+                            <div class="flex-items">
+                                <img src="card2img.jpeg" alt="">
+                                <h4 style="margin-left: 1rem;">Mahiye Jinna Sohna</h4>
+                            </div>
+                            <div class="flex-items">
+                                <img src="shreya ghoshal.jpg" alt="">
+                                <h4 style="margin-left: 1rem;">This is Shreya Ghoshal</h4>
+                            </div>
+                            <div class="flex-items">
+                                <img src="janiye song.jpg" alt="">
+                                <h4 style="margin-left: 1rem; line-height: 1.5rem;">
+                                Janiye (from the Netflix Film "Chor Nikal Ke Bhaga")</h4>
+                            </div>
+                </div>
+            </div>
+
+            <div id="mainbox-main-content">
+                <div class="flexbox">
+                    <h2>Recently Played</h2>
+                    <h5>Show all</h5>
+                </div>
+                <div class="flexbox" style="margin-top: 1.2rem;">
+                    <div class="flexcards">
+                        <img src="song poster.jpg" alt="">
+                        <div>
+                            <h4>Baarishein</h4>
+                            <span>Anuv Jain</span>
+                        </div>
+                    </div>
+                    <div class="flexcards">
+                        <img src="card2img.jpeg" alt="">
+                        <div>
+                            <h4>Mahiye Jinna Sohna</h4>
+                            <span>Darshan Raval</span>
+                        </div>
+                    </div>
+                    <div class="flexcards">
+                        <img src="card6img.jpeg" alt="">
+                        <div>
+                            <h4>Top Songs India</h4>
+                            <span>Your daily update of the most played...</span>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+
+            <div id="mainbox-main-content">
+                <div class="flexbox">
+                    <h2>Made For vrinda</h2>
+                    <h5>Show all</h5>
+                </div>
+                <div class="flexbox" style="margin-top: 1.2rem;">
+                    <div class="flexcards">
+                        <img src="poster daily mix.jpg" alt="">
+                        <div>
+                            <h4>This is Sanam</h4>
+                            <span>This is Sanam. The essential tracks, all...</span>
+                        </div>
+                    </div>
+                    <div class="flexcards">
+                        <img src="flexcard2.jpg" alt="">
+                        <div>
+                            <h4>Daily mix 1</h4>
+                            <span>Pritam, Badshah, Jasmine Sandlas a...</span>
+                        </div>
+                    </div>
+                    <div class="flexcards">
+                        <img src="flexcard3.jpg" alt="">
+                        <div>
+                            <h4>Daily mix 2</h4>
+                            <span>A.R. Rahman, Pritam, Sachet Tandon and...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             
+            <div id="labels">
+                <div id="label-main-box">
+                    <div class="label-boxes">
+                        <h4>Company</h4>
+                        <span>About</span>
+                        <span>Jobs</span>
+                        <span>For the Record</span>
+                    </div>
+                    <div class="label-boxes">
+                        <h4>Communities</h4>
+                        <span>For Artists</span>
+                        <span>Developers</span>
+                        <span>Advertising</span>
+                        <span>Investors</span>
+                        <span>Vendors</span>
+                    </div>
+                    <div class="label-boxes">
+                        <h4>Useful Links</h4>
+                        <span>Support</span>
+                        <span>Free Mobile App</span>
+                    </div>
+                </div>
+                <div id="label-icons">
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                    <div><i class="fa-brands fa-facebook"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                </div>
+            </div>
+            <div id="horizontal-line"></div>
+            <div id="footer">
+                <div id="footer-links">
+                    <span>Legal</span>
+                    <span>Privacy Center</span>
+                    <span>Privacy Policy</span>
+                    <span>Cookies</span>
+                    <span>About Ads</span>
+                    <span>Accessibility</span>
+                </div>
+
+                <span>
+                    &#169; 2023 Spotify AB
+                </span>
+            </div>
+        </div>
+        <div id="currentsongbox">
+            <div id="head">
+                <h3>Liked Songs</h3>
+                <div>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+
+            <div id="song-poster">
+                <img src="song poster.jpg" alt="">
+            </div>
+
+            <div id="song-title">
+                 <div id="song-name">
+                    <h3>Baarishein</h3>
+                    <span>Anuv Jain</span>
+                 </div>
+                 <div style="color: #1bd760;"><i class="fa-solid fa-heart"></i></div>
+                 <div>
+                    <i class="fa-solid fa-ellipsis"></i>
+                 </div>
+            </div>
+
+            <div id="artist-details">
+                <div>
+                    <span>About the Artist</span>
+                    <img src="artist-poster.jpg" alt="">
+                    <div id="artist-intro">
+                        <h3 style="margin: 0rem 0rem 0.7rem 0rem;">Anuv Jain</h3>
+                        <div>
+                            <span style="position: static; opacity: 0.5; font-weight: 500;">6,457,412 monthly listeners</span>
+                            <button>Follow</button>
+                        </div>
+                        <div>
+                            <p style="opacity: 0.5; font-weight: 500;">Hi! It's Anuv Jain. I try to tell stories through my music. I hope you like them.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="next-song">
+                <div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; color: white;">
+                        <span style="font-weight: 600;">Next in queue</span>
+                        <span style="font-weight: 600; opacity: 0.5;">Open queue</span>
+                    </div>
+
+                    <div>
+                        <div style="display: flex; justify-content: center; align-items: center;">
+                            <i class="fa-solid fa-music"></i>
+                        </div>
+
+                        <div style="width: 3rem; height: 3rem;">
+                            <img src="next-song.jpg" alt="" style="width: 3rem; height: 3rem;border-radius: 0.3rem;">
+                        </div>
+
+                        <div style="display: flex; flex-direction: column; justify-content: center; line-height: 1.5rem;">
+                            <span style="font-weight: 600; ">Lazy Lad</span>
+                            <span style="opacity: 0.5;">Amit Trivedi, Richa...</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="currentsong-display-bar">
+            <div id="div1">
+                <div>
+                    <img src="song poster.jpg" alt="" style="width: 4rem; height: 4rem; border-radius: 0.5rem;">
+                </div>
+                <div>
+                    <h5>Baarishein</h5>
+                    <span style="font-size: 0.7rem; opacity: 0.5;">Anuv Jain</span>
+                </div>
+                <div style="margin-left: 1.5rem; color: #1bd760;">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+            </div>
+            <div id="div2">
+                <div id="player-icons">
+                    <div style="width: 45%; display: flex; justify-content: flex-end;">
+                        <img src="player_icon1.png" alt="" style="margin-right: 1rem;">
+                        <img src="player_icon2.png" alt="">
+                    </div>
+                    <div style="width: 10%; display: flex; justify-content: center; align-items: center;">
+                        <img src="player_icon3.png" alt="" style="height: 2rem ; width: 2rem; opacity: 1;">
+                    </div>
+                    <div style="width: 45%; display: flex; justify-content: flex-start;">
+                        <img src="player_icon4.png" alt="">
+                        <img src="player_icon5.png" alt="" style="margin-left: 1rem;">
+                    </div>
+                </div>
+                <div id="progress-bar-box">
+                     <span style="font-size: 0.8rem; opacity: 0.5; margin-right: 0.6rem;">3:27</span>
+                     <input type="range" class="progress-bar">
+                     <span style="font-size: 0.8rem; opacity: 0.5; margin-left: 0.5rem;">3:27</span>
+                     <div class="thumb" style="right: 2.8rem;"></div>
+                </div>
+            </div>
+            <div id="div3">
+                <i class="fa-solid fa-volume-high"></i>
+                <input type="range" class="progress-bar" id="volume" style="margin-left: 0.5rem;">
+                <div class="thumb"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
